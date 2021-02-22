@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% load staticfiles %}
+{% block title %}TaskManagement | Home{% endblock %}
+
+{% block content %}
+<div class="col-md-offset-1 col-md-10 text-center">
+    <h2><strong>Welcome to Task Management Portal</strong></h2><hr>
+
+    
+
+    <img src="{% static 'main/images/cuberoot.png' %}" style="width: 150px" />
+    <br><br>
+
+    <a href="{% url 'allTasks' %}" class="btn btn-info" style="margin-bottom:20px">Show All Tasks </a>
+</div>
+{% endblock %}
+
+
+
+
+<!-- $ pip install -r requirements.txt
+$ python manage.py makemigrations
+$ python manage.py migrate
+$ python manage.py collectstatic
+$ python manage.py runserver -->
+
+
